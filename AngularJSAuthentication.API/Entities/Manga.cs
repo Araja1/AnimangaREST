@@ -1,25 +1,22 @@
-﻿using AngularJSAuthentication.API.Models;
-using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Web;
+﻿using System.ComponentModel.DataAnnotations;
 
 namespace AngularJSAuthentication.API.Entities
 {
     public class Manga
-    {/*
+    {
         [Key]
-        public string MId { get; set; }
-        [Required]
-        public string Secret { get; set; }
-        [Required]
-        [MaxLength(100)]
-        public string Name { get; set; }
-        public ApplicationTypes ApplicationType { get; set; }
-        public bool Active { get; set; }
-        public int RefreshTokenLifeTime { get; set; }
-        [MaxLength(100)]
-        public string AllowedOrigin { get; set; } */
+        public int MId { get; set; }
+        [MaxLength(13)]
+        public string ISBN { get; set; }
+        public string Title { get; set; }
+        public string Author { get; set; }
+        public float Price { get; set; }
+        public string Release { get; set; }
+        public int Edition { get; set; }
+        public byte[] Cover { get; set; }
+        public string Description { get; set; }
+        public string Publisher { get; set; }
+        public string Genre { get; set; }
+        public int BookNumber { get; set; }
     }
 }
