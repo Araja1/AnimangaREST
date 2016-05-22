@@ -9,7 +9,7 @@ using System.Web.Http.Cors;
 
 namespace AngularJSAuthentication.API.Controllers
 {
-    [RoutePrefix("api/Orders")]
+    [RoutePrefix("api/Mangas")]
     public class OrdersController : ApiController
     {
         [Authorize]
