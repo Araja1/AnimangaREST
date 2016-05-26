@@ -7,6 +7,7 @@ namespace AngularJSAuthentication.API.Migrations
     {
         public override void Up()
         {
+
             CreateTable(
                 "dbo.Clients",
                 c => new

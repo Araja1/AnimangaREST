@@ -35,14 +35,21 @@ namespace AngularJSAuthentication.API.Entities
                   {
                       using (var reader = command.ExecuteReader())
                       {
-                          while (reader.Read())
-                          {
-                              var manga = new Manga();
-                              manga.MId = (int)reader["MId"];
+                        while (reader.Read())
+                        {
+                            var manga = new Manga();
+                            manga.MId = (int)reader["MId"];
                             manga.Title = reader["Title"].ToString();
                             manga.ISBN = reader["ISBN"].ToString();
-                            //   manga.LastName = reader["LastName"].ToString();
-                            //   manga.Age = Convert.ToInt32(reader["Age"]);
+                            manga.Author = reader["Author"].ToString();
+                            manga.Price = (float)reader["Price"];
+                            manga.Release = reader["Release"].ToString();
+                            manga.Edition = (int)reader["Edition"];
+                            manga.Cover = new byte[] { (byte)reader["Cover"]};
+                            manga.Description = reader["Description"].ToString();
+                            manga.Publisher = reader["Publisher"].ToString();
+                            manga.Genre = reader["Genre"].ToString();
+                            manga.BookNumber = (int)reader["BookNumber"];
 
                             listOfManga.Add(manga);
                           }

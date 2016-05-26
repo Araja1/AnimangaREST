@@ -8,7 +8,7 @@ using System.Web.Http;
 
 namespace AngularJSAuthentication.API.Controllers
 {
-    [RoutePrefix("api/Orders")]
+    [RoutePrefix("api/Mangas")]
     public class MangasController : ApiController
     {
         [Authorize]

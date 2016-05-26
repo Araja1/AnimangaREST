@@ -18,9 +18,9 @@ app.config(function ($routeProvider) {
         templateUrl: "/app/views/signup.html"
     });
 
-    $routeProvider.when("/orders", {
-        controller: "ordersController",
-        templateUrl: "/app/views/orders.html"
+    $routeProvider.when("/mangas", {
+        controller: "mangasController",
+        templateUrl: "/app/views/mangas.html"
     });
 
     $routeProvider.when("/refresh", {
